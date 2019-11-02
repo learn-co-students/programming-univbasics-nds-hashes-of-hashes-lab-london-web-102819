@@ -31,28 +31,32 @@ PORTION_4 = {
 }
 
 def naming_system
-  bio_of_earh={
-    label: "Kingdom",
-    sub_category: {
-      label: "Phylum",
-      sub_category: {
-        label: "Class",
-        sub_category:{
-          label: "Order",
-          sub_category:{
-            label: "Family",
-            sub_category: {
-              label: "Genus",
-              sub_category:{
-                label: "Species",
-                 sub_category: nil 
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+  bio_of_earh = PORTION_1
+  PORTION_1[:sub_category][:sub_category][:sub_category]=PORTION_2
+  PORTION_2[:label][:sub_category]= PORTION_3
+  PORTION_3[:sub_category][:sub_category] = PORTION_4
+  # bio_of_earh={
+  #   label: "Kingdom",
+  #   sub_category: {
+  #     label: "Phylum",
+  #     sub_category: {
+  #       label: "Class",
+  #       sub_category:{
+  #         label: "Order",
+  #         sub_category:{
+  #           label: "Family",
+  #           sub_category: {
+  #             label: "Genus",
+  #             sub_category:{
+  #               label: "Species",
+  #                sub_category: nil 
+  #             }
+  #           }
+  #         }
+  #       }
+  #     }
+  #   }
+  # }
   # Remember:
   #  Kingdom
   #  Phylum
