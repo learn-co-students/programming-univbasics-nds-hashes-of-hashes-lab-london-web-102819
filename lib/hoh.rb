@@ -31,10 +31,11 @@ PORTION_4 = {
 }
 
 def naming_system
-  bio_of_earh = PORTION_1
+  bio_of_earth = PORTION_1
   PORTION_1[:sub_category][:sub_category][:sub_category]=PORTION_2
-  PORTION_2[:label][:sub_category]= PORTION_3
+  PORTION_2[:sub_category]= PORTION_3
   PORTION_3[:sub_category][:sub_category] = PORTION_4
+  bio_of_earth
   # bio_of_earh={
   #   label: "Kingdom",
   #   sub_category: {
